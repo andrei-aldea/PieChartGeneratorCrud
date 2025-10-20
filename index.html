@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>Car Dealership Inventory</title>
+
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<script
+			src="script.js"
+			defer
+		></script>
+	</head>
+
+	<body>
+		<div>
+			<div>
+				<h1>Car Dealership Inventory</h1>
+			</div>
+
+			<div>
+				<section>
+					<h2>Inventory</h2>
+
+					<form
+						id="addForm"
+						autocomplete="off"
+					>
+						<div>
+							<label for="manufacturerInput">Manufacturer</label>
+							<input
+								id="manufacturerInput"
+								type="text"
+								placeholder="e.g., Audi"
+								required
+							/>
+						</div>
+						<div>
+							<label for="modelInput">Model</label>
+							<input
+								id="modelInput"
+								type="text"
+								placeholder="e.g., Q5"
+								required
+							/>
+						</div>
+						<div>
+							<label for="priceInput">Price (number)</label>
+							<input
+								id="priceInput"
+								type="number"
+								min="0"
+								step="0.01"
+								placeholder="e.g., 21500"
+								required
+							/>
+						</div>
+						<div>
+							<label for="colorInput">Pick color</label>
+							<input
+								id="colorInput"
+								type="color"
+								value="#4ea1ff"
+							/>
+						</div>
+						<div>
+							<button type="submit">Add car</button>
+						</div>
+						<br />
+					</form>
+
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>Manufacturer</th>
+									<th>Model</th>
+									<th>Price</th>
+									<th>Color</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</section>
+
+			
+			</div>
+		</div>
+	</body>
+</html>
