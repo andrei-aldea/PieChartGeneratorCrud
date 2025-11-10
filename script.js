@@ -212,6 +212,7 @@ getEl('#addForm').addEventListener('submit', (e) => {
 	e.target.reset()
 	getEl('#colorInput').value = color
 	renderTable()
+	new Audio('add.mp3').play()
 })
 
 function generateId() {
